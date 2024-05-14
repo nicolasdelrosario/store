@@ -1,9 +1,13 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import { Header, Footer } from 'app/components/shared'
-import './globals.css'
+import '../css/_variables.css'
+import '../css/global.css'
 
-const poppins = Poppins({ weight: '400', subsets: ['latin'] })
+const poppins = Poppins({
+	weight: ['100', '300', '500', '700'],
+	subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
 	title: 'App Store',
